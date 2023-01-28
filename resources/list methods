@@ -1,0 +1,14 @@
+'''
+append()	 Used for appending and adding elements to the end of the List. 
+copy()	It returns a shallow copy of a list
+clear()	This method is used for removing all items from the list. 
+count()	This methods count the elements
+extend()	Adds each element of the iterable to the end of the List
+index()	Returns the lowest index where the element appears. 
+insert()	Inserts a given element at a given index in a list. 
+pop()	 Removes and returns the last value from the List or the given index value.
+remove()	Removes a given object from the List. 
+reverse()	 Reverses objects of the List in place.
+sort()	Sort a List in ascending, descending, or user-defined order
+max()	Calculates maximum of all the elements of List
+'''
