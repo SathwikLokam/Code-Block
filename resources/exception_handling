@@ -1,0 +1,7 @@
+try:
+ <body>
+ raise Exception()
+except Exception as e:
+ <exception handling>
+finally:
+ <clean-up>
