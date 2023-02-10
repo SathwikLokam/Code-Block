@@ -1,0 +1,1 @@
+{"meaning": "python print() function as the name suggests is used to print a python object(s) in Python as standard output.", "syntax": "print(args)", "example": "list = [1,2,3]\ntuple = (\"A\",\"B\")\nstring = \"String\"\n\nprint(list,tuple,string)"}

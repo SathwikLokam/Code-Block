@@ -1,8 +1,0 @@
-class ClassName(SuperClass):
-   class_variable = static_value
-   def __init__(self, value1, <...>):
-   self.instance_variable1 = value1
-   self.instance_function()
-   def instance_function(self, arg1, <...>):
-   <function body>
-   return return_value

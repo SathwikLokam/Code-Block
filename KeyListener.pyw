@@ -15,27 +15,19 @@ st="buddy"
 ignoreKeys=[Key.caps_lock,Key.shift,Key.num_lock]
 try:
     def run():
-        #----> vocal statements
-        '''playsound("sound.mp3")
-        ls=""
-        index=0
-        subprocess.call("python run.pyw",shell=True)'''
-        #------> console application statements
-        
         mouse_listener = pynput.mouse.Listener(suppress=True)
         mouse_listener.start()
-        #keyboard_listener = pynput.keyboard.Listener(suppress=True)
-        #keyboard_listener.start()
         global st
         for x in range(len(st)):
             pa.write("\b") 
         pa.write("#request>")
         mouse_listener.stop()
         os.startfile("requestListener.pyw")
-        # keyboard_listener.stop()
-
+        
     def exitCode(key):
-        if key==Key.esc:
+        if key==Key.f12:
+            os.startfile("cliprunner/runClip.pyw")
+        if key==Key.f4:
             return ctypes.windll.user32.MessageBoxW(0,"Hey, do you want to exit CodeBlock", "Code Block", 4)==7 or ctypes.windll.user32.MessageBoxW(0, "Code Block terminated", "Code Block", 0)!=1
 
     def check(char,ind):

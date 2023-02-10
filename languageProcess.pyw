@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from threading import Thread
 import os
+import json
 
 def  ignoreStrings(strs):
     ignoreList=[
@@ -20,17 +21,33 @@ def  ignoreStrings(strs):
         "example",
         "define",
         "example",
-        "syntax"
+        "syntax",
+        "and",
+        "meaning",
+        "is",
+        "give",
+        "me",
+        "hey",
+        "just",
+        "there",
+        "of"
     ]
+    ese=[]
     if "explain" in strs:
-        ese="explain"
-    elif ("defination" in strs) or ("define" in strs):
-        ese="defination"
-    elif "example" in strs:
-        ese="example"
-    else:
-        ese="syntax" 
+        ese=[]
+    if ("meaning" in strs) or ("meaning" in strs):
+        ese.append("meaning")
+    if "syntax" in strs:
+        ese.append("syntax")
+    if "example" in strs:
+        ese.append("example")
+    if ese==[]:
+        print(ese,strs)
+        ese.append("meaning")
+        ese.append("syntax")
+        ese.append("example")
     
+
     filteredList=[]
     for st in strs:
         if st not in ignoreList:
@@ -42,14 +59,18 @@ def  ignoreStrings(strs):
 
     ##################
     file=open("criticalsection","w")
-    file.write(ss)
+    dic={}
+    dic["key"]=ss
+    dic["operation"]=ese
+    print(dic)
+    json.dump(dic,file)
     file.close()
     os.startfile("pointer.pyw")
-    ################
+    ##################
 
 def convert():
     file=open("criticalsection","r")
-    st=file.read().split()
+    st=file.read().replace(","," ").split()
     strs=""
     
     for w in st:

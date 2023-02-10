@@ -1,0 +1,1 @@
+{"meaning": "Python If statement is a conditional statement wherein a set of statements execute based on the result of a condition.\n\n", "syntax": "if conditional:\n <body>\nelif conditional:\n <body>\nelse:\n <body>\n", "example": "a = 2\nb = 5\n\nif a<b:\n\tprint(a, 'is less than', b)"}

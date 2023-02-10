@@ -1,6 +1,0 @@
-if conditional:
- <body>
-elif conditional:
- <body>
-else:
- <body>

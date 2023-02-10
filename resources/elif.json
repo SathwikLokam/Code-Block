@@ -1,0 +1,1 @@
+{"meaning": "The else keyword is used in conditional statements (if statements), and decides what to do if the condition is False.", "syntax": "if conditional:\n <body>\nelif conditional:\n <body>\nelse:\n <body>\n", "example": "x = 5\ntry:\n  x > 10\nexcept:\n  print(\"Something went wrong\")\nelse:\n  print(\"The 'Try' code was executed without raising any errors!\")"}

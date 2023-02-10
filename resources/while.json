@@ -1,0 +1,1 @@
+{"meaning": "While loop falls under the category of indefinite iteration. Indefinite iteration means that the number of times the loop is executed isn\u2019t specified explicitly in advance. ", "syntax": "while condition:\n\tstatement(s)", "example": "\ncount = 0\nwhile (count < 3):\n    count = count + 1\n    print(\"Hello user\")"}

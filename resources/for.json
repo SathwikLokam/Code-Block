@@ -1,0 +1,1 @@
+{"meaning": "A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).", "syntax": "for varible in collection:\n\tstaments\n", "example": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfor x in fruits:\n  print(x)"}
