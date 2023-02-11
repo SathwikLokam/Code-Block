@@ -9,8 +9,7 @@ for fi in files:
     if fi !="updater.py":
         r=Tk()
         r.title("Updater")
-        Label(text=fi,font=("Arial",20)).pack()  
-
+        Label(text=fi,font=("Arial",20)).pack()
         op=open(fi,"r")
         data=json.load(op)
         op.close()
